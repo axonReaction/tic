@@ -1,0 +1,47 @@
+body {
+  font-family : monospace ;
+  font-size : 100% ;
+  background-color : white;
+  color : black ;
+  width : 80% ;
+  min-width : 400px;
+  min-height : 200px ; 
+  padding : 1em ; 
+  margin : 0% 5% ; 
+  display : block ;
+}
+
+body .article {
+  font-size: 125%;
+}
+
+body .article .headline {
+  font-size: 130%;
+}
+
+body .article .headline {
+  text-transform: lowercase;
+}
+
+
+body .article .headline .when {
+  text-transform: uppercase;
+}
+
+
+a:link { color : black; font-weight: 900; text-decoration : none !important; }
+a:hover   { font-weight: normal; }
+a:visited { color: black; }
+
+pre.asciitext {
+  font-size : 150% ;
+}
+
+#menu li {
+    display : inline ;
+}
+
+#post-list {
+    margin-bottom : 1em ;
+    margin-top : 1em ;
+}
