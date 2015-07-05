@@ -40,7 +40,8 @@ body .article .content {
 body .article .command {
   font-size: 125%;  
   font-weight: 900;
-  cursor: pointer; 
+  cursor: pointer;
+  padding-bottom: 200px;  
 }
 
 a:link { color : black; font-weight: 900; text-decoration : none !important; }
