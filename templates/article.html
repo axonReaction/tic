@@ -1,2 +1,37 @@
 {% extends "base.html" %}
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<div class="article">
+  <div class ="headline">
+    <a class="title" href="{{ SITEURL }}/{{ article.url}}">
+      {{ article.title }}
+    </a>
+    <span class="who">
+      {{ article.author }}
+    </span>
+    <span class="when">
+      {% include 'datetime.html' %}
+    </span>
+  </div>
+  <div class="content">
+    {{ article.content }}
+  </div>
+  <div class="command" id="toggle">
+    comments
+  </div>
+  <div class="comments" id="modal">
+    {% include 'disqus.html' %}
+  </div>
+</div>
+
+<script>
+$("#modal").hide();
+$(document).ready(function() {
+  $("#toggle").click(function() {
+    $("#modal").toggle();
+  });
+});
+</script>
+{% endblock content %}
 

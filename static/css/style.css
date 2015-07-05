@@ -5,18 +5,23 @@ body {
   color : black ;
   width : 80% ;
   min-width : 400px;
-  min-height : 200px ; 
+  min-height : 200px ;
+  max-width: 800px;
   padding : 1em ; 
   margin : 0% 5% ; 
   display : block ;
 }
 
+body .postslogan {
+  padding-bottom: 25px;
+}
+
 body .article {
-  font-size: 125%;
+  font-size: 120%;
 }
 
 body .article .headline {
-  font-size: 130%;
+  font-size: 125%;
 }
 
 body .article .headline {
@@ -28,6 +33,15 @@ body .article .headline .when {
   text-transform: uppercase;
 }
 
+body .article .content {
+  padding-bottom: 25px;  
+}
+
+body .article .command {
+  font-size: 125%;  
+  font-weight: 900;
+  cursor: pointer; 
+}
 
 a:link { color : black; font-weight: 900; text-decoration : none !important; }
 a:hover   { font-weight: normal; }
@@ -45,3 +59,4 @@ pre.asciitext {
     margin-bottom : 1em ;
     margin-top : 1em ;
 }
+

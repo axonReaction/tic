@@ -32,11 +32,11 @@
     {% endblock head %}
   </head>
   <body>
-    <header >
+    <header>
       <pre class="asciitext">{{ SITESLOGAN1 }}</pre>
       <pre class="asciitext"><a href="{{ SITEURL }}">{{ SITELOGO }}</a></pre>
-      <pre class="asciitext">{{ SITESLOGAN2 }}  </pre>
-      <br />
+      <pre class="asciitext">{{ SITESLOGAN2 }}</pre>
+      <div class="postslogan"></div>
     </header><!-- /#banner -->
     <nav id="menu"><ul>
 	{% for title, link in MENUITEMS %}
@@ -54,7 +54,7 @@
 	{% endif %}
 	{% endif %}
     </ul></nav><!-- /#menu -->
-    {% block content %}
+    {% block content %}    
     {% if articles %}
     {% for article in articles %}
     <div class="article">
@@ -65,8 +65,8 @@
 	<span class="who">
 	  {{ article.author }}
 	</span>
-	<span class="when">
-	  {{ article.date|strftime('%a %b %d %y %H:%M') }}
+	<span class="when">	
+	  {% include 'datetime.html' %}  
 	</span>
       </div>
       <div class="content">
@@ -75,7 +75,7 @@
     </div>
     {% endfor %}
     {% endif %}
-    {% endblock content %}  
+    {% endblock content %}    
     <footer id="contentinfo" class="body">
       <!-- <address id="about" class="vcard body"> -->
       <!-- 	Proudly powered by <a href="http://getpelican.com/">Pelican</a>, -->
