@@ -1,3 +1,3 @@
 # TIC
 
-TIC is the theme used for THE IRON CURTAIN blog. 
+TIC is the theme used for THE IRONED CURTAIN blog. 
