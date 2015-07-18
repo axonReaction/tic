@@ -17,7 +17,8 @@ body .postslogan {
 }
 
 body .article {
-  font-size: 120%;
+    font-size: 120%;
+
 }
 
 body .article .headline {
@@ -34,14 +35,19 @@ body .article .headline .when {
 }
 
 body .article .content {
-  padding-bottom: 25px;  
+    padding-bottom: 25px;
+
 }
 
 body .article .command {
   font-size: 125%;  
   font-weight: 900;
   cursor: pointer;
-  padding-bottom: 200px;  
+  padding-bottom: 200px;
+}
+
+body .article .command:hover {
+  font-weight: normal;
 }
 
 a:link { color : black; font-weight: 900; text-decoration : none !important; }

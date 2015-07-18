@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
   <head>
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="{{ SITEURL }}/theme/images/icons/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/favicon.ico">
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <meta charset="utf-8" />
+    <meta charset="ascii" />
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     {% endif %}
